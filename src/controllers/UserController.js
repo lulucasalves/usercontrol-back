@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs')
 
 class UserController {
   show(req, res) {
-    const users = ['Kaio', 'Lucas']
+    const users = { users: ['Lucas, Kaio'], error: false }
 
     return res.json(users)
   }
